@@ -26,7 +26,7 @@ If the depencies cooperation_jn_common_ui is set in the package.json
 
 #### Solution 2
 
-Manually delete the folder : "node_modules/cooperation_jn_common_ui"
+Manually delete the folder : "node_modules/cooperation_jn_common_ui"\
 And run command:
 
     npm install https://github.com/sigrennesmetropole/cooperation_jn_common_ui.git
@@ -46,16 +46,16 @@ lib/Example.vue
     	Example.vue
     }
      
-3 - Run vite build
+3 - Run vite build\
 run the command : npm run build 
 
 ## How to work locally with this library
 
-In this example we create a new component called: Example.vue
-The component is create in projet : cooperation_jn_common_ui
+In this example we create a new component called: Example.vue\
+The component is create in projet : cooperation_jn_common_ui\
 And we need to use this new component locally on another project called: project_a
 
-1 - Run command "npm link" in project cooperation_jn_common_ui
+1 - Run command "npm link" in project cooperation_jn_common_ui\
 2 - Run command "npm link cooperation_jn_common_ui" in project project_a
 
 You can now use the component Example.vue in your project_a:
