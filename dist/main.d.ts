@@ -1,3 +1,4 @@
 import VueComponentNpmExample from './VueComponentNpmExample.vue';
 import TestNul from './TestNul.vue';
-export { VueComponentNpmExample, TestNul };
+import FooterArea from './FooterArea.vue';
+export { VueComponentNpmExample, TestNul, FooterArea };
