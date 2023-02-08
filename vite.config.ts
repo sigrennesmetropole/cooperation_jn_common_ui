@@ -10,7 +10,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'lib/main.ts'),
       name: 'VueComponentNpmExample',
       // the proper extensions will be added
-      fileName: 'vue-component-npm-example'
+      fileName: 'cooperation_jn_common_ui'
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

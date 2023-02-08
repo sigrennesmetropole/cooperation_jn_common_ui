@@ -1,2 +1,6 @@
-import VueComponentNpmExample from './VueComponentNpmExample.vue'
-export { VueComponentNpmExample }
+import VueComponentNpmExample from './VueComponentNpmExample.vue';
+import TestNul from './TestNul.vue';
+export { 
+    VueComponentNpmExample, 
+    TestNul 
+};
