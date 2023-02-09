@@ -1,5 +1,8 @@
-import FooterArea from './FooterArea.vue';
+import './main.css'
 
+import FooterArea from './FooterArea.vue';
+import UiAbstractTitle from "./ui/UiAbstractTitle.vue";
 export { 
-    FooterArea
+    FooterArea,
+    UiAbstractTitle
 };
