@@ -55,9 +55,9 @@ In this example we create a new component called: Example.vue\
 The component is create in projet : cooperation_jn_common_ui\
 And we need to use this new component locally on another project called: project_a
 
-1 - In project cooperation_jn_common_ui\
+1 - In project cooperation_jn_common_ui
 
-Run command "npm link" in project cooperation_jn_common_ui\
+Run command "npm link" in project cooperation_jn_common_ui
 
 When you make an update, you have to run "npm run build"
 You can run "npm run watch" to build automatically on every file save
@@ -65,7 +65,7 @@ You can run "npm run watch" to build automatically on every file save
 2 - In project project_a
 
 Run command "npm link cooperation_jn_common_ui" in project project_a\
-\
+
 
 You can now use the component Example.vue in your project_a:
 
