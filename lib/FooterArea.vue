@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import UiRennesLogo from './ui/UiRennesLogo.vue'
 import LegalLink from './LegalLink.vue'
-
 </script>
 <template>
   <footer
