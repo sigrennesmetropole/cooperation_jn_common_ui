@@ -22,3 +22,6 @@ dist
 *.sln
 *.sw?
 *.iml
+
+# Cache
+.eslintcache
