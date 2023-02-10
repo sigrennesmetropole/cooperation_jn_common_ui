@@ -1,14 +1,13 @@
 <script lang="ts" setup>
-import UiLinkFooter from './ui/UiLinkFooter.vue'
-import UiRennesLogo from './ui/UiRennesLogo.vue'
+import UiLinkFooter from "./ui/UiLinkFooter.vue";
 
 const props = defineProps({
   textColor: {
     type: String,
     required: false,
-    default: 'neutral-500',
+    default: "neutral-500",
   },
-})
+});
 </script>
 
 <template>
