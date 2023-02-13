@@ -9,7 +9,6 @@ import UiLinkFooter from './UiLinkFooter.vue'
       type: 'grid',
       width: 500,
     }"
-    group="ui-base"
   >
     <template #default>
       <UiLinkFooter :url="'https://camptocamp.com'"
