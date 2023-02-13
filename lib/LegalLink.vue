@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import UiLinkFooter from './ui/UiLinkFooter.vue'
-import UiRennesLogo from './ui/UiRennesLogo.vue'
 
 const props = defineProps({
   textColor: {
