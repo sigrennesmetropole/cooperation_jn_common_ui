@@ -2,4 +2,6 @@ import './css/main.css'
 
 import FooterArea from './FooterArea.vue'
 import UiAbstractTitle from './ui/UiAbstractTitle.vue'
-export { FooterArea, UiAbstractTitle }
+import LegalLink from './LegalLink.vue'
+
+export { FooterArea, UiAbstractTitle, LegalLink }
