@@ -21,6 +21,7 @@
     "lint:js": "eslint . --ext .vue,.js,.cjs,.mjs,.ts,.cts,.mts --ignore-path .gitignore",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:prettier",
+    "format": "prettier --write --list-different . && npm run lint:js -- --fix",
     "prepare": "husky install",
     "story": "histoire dev",
     "story:build": "histoire build",
