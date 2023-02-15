@@ -1,9 +1,28 @@
 name: Node.js Package
 
 on:
-  workflow_dispatch:
+  release:
+  push:
+    branches:
+      - main
 
 jobs:
+  patch:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Git config
+        run: |
+          git config --global user.email "github-actions[bot]"
+          git config --global user.name "github-actions[bot]@users.noreply.github.com"
+      - name: Version bump
+        run: npm version patch
+      - name: Git push version bump
+        run: git push origin main
   build:
     runs-on: ubuntu-latest
     steps:
