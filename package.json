@@ -1,7 +1,7 @@
 {
   "name": "cooperation_jn_common_ui",
   "private": true,
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "main": "./dist/cooperation_jn_common_ui.umd.cjs",
   "module": "./dist/cooperation_jn_common_ui.js",
@@ -25,7 +25,8 @@
     "prepare": "husky install",
     "story": "histoire dev",
     "story:build": "histoire build",
-    "story:preview": "histoire preview"
+    "story:preview": "histoire preview",
+    "format": "prettier --write --list-different . && npm run lint:js -- --fix"
   },
   "dependencies": {
     "npm-watch": "^0.11.0",
