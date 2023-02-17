@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import UiIconButton from './UiIconButton.vue'
+import IconHome from '../icons/IconHome.vue'
 
 function initState() {
   return {
@@ -71,6 +72,9 @@ function initState() {
           <span class="pl-2">Text</span>
         </UiIconButton>
       </template>
+    </Variant>
+    <Variant title="Home Button">
+      <UiIconButton class="rounded-lg"><IconHome /></UiIconButton>
     </Variant>
   </Story>
 </template>
