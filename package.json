@@ -38,9 +38,9 @@
   "devDependencies": {
     "@histoire/plugin-vue": "^0.10.7",
     "@types/node": "^18.7.18",
-    "@typescript-eslint/eslint-plugin": "^5.51.0",
-    "@typescript-eslint/parser": "^5.51.0",
     "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
     "autoprefixer": "^10.4.9",
     "eslint": "^8.33.0",
     "eslint-plugin-vue": "^9.9.0",
