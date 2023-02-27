@@ -21,6 +21,10 @@ const props = defineProps({
     type: String,
     default: '16px',
   },
+  positionTop: {
+    type: String,
+    default: '16px',
+  },
 })
 
 const displayTooltip = ref(false)
@@ -30,18 +34,19 @@ const classDimensionButton = computed(() => {
 })
 
 const stylePositionButton = computed(() => {
-  const positionTop = 'top: 16px;'
+  const positionTop = 'top: ' + props.positionTop + ';'
   const positionRight = 'right: ' + props.positionRight + ';'
   return positionTop + ' ' + positionRight
 })
 
 const stylePositionText = computed(() => {
-  const positionTop = 'top: ' + (parseInt(props.heightButton) * 4 + 20) + 'px;'
+  const propsPosTop = parseInt(props.positionTop.replace('px', '')) + 8
+  const positionTop =
+    'top: ' + (parseInt(props.heightButton) * 4 + propsPosTop) + 'px;'
   const positionRight = 'right: ' + props.positionRight + ';'
   return positionTop + ' ' + positionRight
 })
 </script>
-
 <template>
   <div class="absolute z-9" :style="stylePositionButton">
     <div
