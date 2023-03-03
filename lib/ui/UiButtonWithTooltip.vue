@@ -49,14 +49,15 @@ const stylePositionText = computed(() => {
 </script>
 <template>
   <div class="absolute z-9" :style="stylePositionButton">
-    <div
+    <button
       class="bg-white rounded flex items-center justify-center cursor-pointer"
       :class="classDimensionButton"
       @click="displayTooltip = !displayTooltip"
+      :aria-label="'Contenu tooltip:' + props.text"
     >
       <img v-if="!displayTooltip" :src="iconTooltip" class="w-5 h-5" />
       <img v-else :src="iconTooltipRed" class="w-5 h-5" />
-    </div>
+    </button>
   </div>
   <div
     class="absolute z-50"
