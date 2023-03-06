@@ -16,19 +16,12 @@ defineProps({
 </script>
 
 <template>
-  <section class="flex flex-col p-0 gap-3 font-dm-sans">
-    <div class="flex items-center p-0 gap-2.5">
-      <component
-        v-if="logo"
-        :is="logo"
-        role="img"
-        class="h-14 w-14"
-      ></component>
-      <h1 class="font-bold text-3xl text-center">{{ title }}</h1>
-    </div>
-    <div class="font-medium text-sm text-neutral-800">
-      {{ abstract }}
-    </div>
-    <component v-if="panelSummary" :is="panelSummary"></component>
-  </section>
+  <div class="flex items-center p-0 gap-2.5">
+    <component v-if="logo" :is="logo" role="img" class="h-14 w-14"></component>
+    <h1 class="font-bold text-3xl text-center">{{ title }}</h1>
+  </div>
+  <div class="font-medium text-sm text-neutral-800">
+    {{ abstract }}
+  </div>
+  <component v-if="panelSummary" :is="panelSummary"></component>
 </template>
