@@ -6,6 +6,8 @@ import LegalLink from './LegalLink.vue'
 import UiIconButton from './ui/UiIconButton.vue'
 import UiCompass from './ui/UiCompass.vue'
 import UiButtonWithTooltip from './ui/UiButtonWithTooltip.vue'
+import UiDescribeButton3D from './ui/UiDescribeButton3D.vue'
+import UiDescribeButtonCompass from './ui/UiDescribeButtonCompass.vue'
 import IconCompass from './icons/IconCompass.vue'
 import IconHome from './icons/IconHome.vue'
 import IconPlus from './icons/IconPlus.vue'
@@ -18,6 +20,8 @@ export {
   LegalLink,
   UiIconButton,
   UiButtonWithTooltip,
+  UiDescribeButton3D,
+  UiDescribeButtonCompass,
   IconCompass,
   IconHome,
   IconPlus,
