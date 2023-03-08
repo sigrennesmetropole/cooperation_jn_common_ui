@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import IconCompass from '../icons/IconCompass.vue'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { defineProps, defineEmits } from 'vue'
 
 const props = defineProps({
@@ -20,6 +20,20 @@ onMounted(() => {
     transformArrow(props.vpPitch as number)
   }
 })
+
+watch(
+  () => props.vpHeading,
+  () => {
+    transformNorthPoint(props.vpHeading as number)
+  }
+)
+
+watch(
+  () => props.vpPitch,
+  () => {
+    transformArrow(props.vpPitch as number)
+  }
+)
 
 const transformNorthPoint = (angle: number) => {
   if (compass.value && arrow.value) {
