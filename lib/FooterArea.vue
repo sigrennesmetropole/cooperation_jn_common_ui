@@ -1,6 +1,40 @@
 <script setup lang="ts">
 import UiRennesLogo from './ui/UiRennesLogo.vue'
-import LegalLink from './LegalLink.vue'
+import UiLinkFooter from './ui/UiLinkFooter.vue'
+import { defineEmits } from 'vue'
+
+const emit = defineEmits(['openLink'])
+
+const props = defineProps({
+  textColor: {
+    type: String,
+    required: false,
+    default: 'neutral-500',
+  },
+})
+
+const legalLink = [
+  {
+    link: 'mentions-legales',
+    name: 'Mentions légales',
+  },
+  {
+    link: 'confidentialite',
+    name: 'Confidentialité',
+  },
+  {
+    link: 'plan-du-site',
+    name: 'Plan du site',
+  },
+  {
+    link: 'accessibilite',
+    name: 'Accessibilité : totalement conforme',
+  },
+]
+
+function goTo(linkToFollow: String) {
+  emit('openLink', linkToFollow)
+}
 </script>
 <template>
   <footer
@@ -14,6 +48,16 @@ import LegalLink from './LegalLink.vue'
         3D.
       </div>
     </div>
-    <LegalLink> </LegalLink>
+    <div
+      class="flex flex-row items-end gap-[7px] pt-2 font-dm-sans font-normal text-[10px] leading-4 text-neutral-500 underline hover:cursor-pointer"
+    >
+      <UiLinkFooter
+        v-for="item in legalLink"
+        :key="item.name"
+        @click="goTo(item.link)"
+        :textColor="props.textColor"
+        >{{ item.name }}</UiLinkFooter
+      >
+    </div>
   </footer>
 </template>
