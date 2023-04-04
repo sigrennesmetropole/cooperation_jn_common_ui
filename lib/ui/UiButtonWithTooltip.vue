@@ -66,9 +66,14 @@ const stylePositionText = computed(() => {
     v-if="displayTooltip"
   >
     <div class="bg-neutral-800 opacity-80 p-2 gap-3 rounded">
-      <span class="text-sm font-normal text-neutral-200">
-        {{ props.text }}
-      </span>
+      <template v-if="props.text !== ''">
+        <span class="text-sm font-normal text-neutral-200">
+          {{ props.text }}
+        </span>
+      </template>
+      <template v-else>
+        <slot></slot>
+      </template>
     </div>
   </div>
 </template>
