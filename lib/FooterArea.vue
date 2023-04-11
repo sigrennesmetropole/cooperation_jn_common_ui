@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import UiRennesLogo from './ui/UiRennesLogo.vue'
 import UiLinkFooter from './ui/UiLinkFooter.vue'
-import { defineEmits } from 'vue'
-
+import { defineEmits, PropType } from 'vue'
+import type { LegalItem } from './model/legalItem.model'
 const emit = defineEmits(['openLink'])
 
 const props = defineProps({
@@ -11,26 +11,8 @@ const props = defineProps({
     required: false,
     default: 'neutral-500',
   },
+  legalList: Array as PropType<LegalItem[]>,
 })
-
-const legalLink = [
-  {
-    link: 'mentions-legales',
-    name: 'Mentions légales',
-  },
-  {
-    link: 'confidentialite',
-    name: 'Confidentialité',
-  },
-  {
-    link: 'plan-du-site',
-    name: 'Plan du site',
-  },
-  {
-    link: 'accessibilite',
-    name: 'Accessibilité : totalement conforme',
-  },
-]
 
 function goTo(linkToFollow: String) {
   emit('openLink', linkToFollow)
@@ -49,14 +31,14 @@ function goTo(linkToFollow: String) {
       </div>
     </div>
     <div
-      class="flex flex-row items-end gap-[7px] pt-2 font-dm-sans font-normal text-[10px] leading-4 text-neutral-500 underline hover:cursor-pointer"
+      class="flex flex-wrap items-end gap-[7px] pt-2 font-dm-sans font-normal text-xs leading-4 text-neutral-500 underline hover:cursor-pointer"
     >
       <UiLinkFooter
-        v-for="item in legalLink"
-        :key="item.name"
-        @click="goTo(item.link)"
+        v-for="item in props.legalList"
+        :key="item['name']"
+        @click="goTo(item['link'])"
         :textColor="props.textColor"
-        >{{ item.name }}</UiLinkFooter
+        >{{ item['name'] }}</UiLinkFooter
       >
     </div>
   </footer>
