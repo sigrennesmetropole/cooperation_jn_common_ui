@@ -18,10 +18,10 @@ defineProps({
     type: String,
     default: '',
   },
-  height: {
+  heightTitle: {
     type: String,
   },
-  width: {
+  widthTitle: {
     type: String,
   },
   positionX: {
@@ -48,8 +48,8 @@ const showTitle: Ref<boolean> = ref(false)
       v-if="showTitle"
       class="absolute border-2 border-black bg-white p-1 rounded text-black text-base font-normal"
       :style="{
-        height: height + 'px',
-        width: width + 'px',
+        height: heightTitle + 'px',
+        width: widthTitle + 'px',
         top: positionY + 'px',
         left: positionX + 'px',
       }"
