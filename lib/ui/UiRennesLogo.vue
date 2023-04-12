@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const rennesLogo = new URL('../../assets/rennesLogo.png', import.meta.url).href
+const rennesLogo = new URL('../../assets/rennesLogo.svg', import.meta.url).href
 </script>
 
 <template>
