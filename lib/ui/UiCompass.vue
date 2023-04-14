@@ -117,6 +117,7 @@ function onCompassClick() {
   <div
     ref="compass"
     class="orbit h-[75px] w-[75px] border-4 border-white rounded-full flex justify-center items-center absolute bottom-0 shadow-lg"
+    data-title="Navigation 3D"
   >
     <div
       class="h-3 w-3 flex justify-center items-center text-[8px] bg-black text-white absolute bottom-[65px] cursor-pointer rounded"
@@ -152,5 +153,29 @@ function onCompassClick() {
     height: 100px;
     width: 100px;
   }
+}
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+[data-title]:after {
+  content: attr(data-title);
+  background-color: rgba(23, 23, 23, 0.8);
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-family: 'DM Sans', sans-serif;
+  color: #e5e5e5;
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  right: 75px;
+  white-space: nowrap;
+  z-index: 99999;
+  visibility: hidden;
+}
+[data-title] {
+  position: relative;
 }
 </style>
