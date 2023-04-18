@@ -12,13 +12,13 @@ function initState() {
 
 <template>
   <Story
-    title="UiIconButton"
+    data-title="UiIconButton"
     :layout="{
       type: 'grid',
       width: 200,
     }"
   >
-    <Variant title="Text Button" :init-state="initState">
+    <Variant data-title="Text Button" :init-state="initState">
       <template #default="{ state }">
         <UiIconButton :disabled="state.disabled" :active="state.active"
           >Click
@@ -26,7 +26,11 @@ function initState() {
       </template>
     </Variant>
 
-    <Variant title="Icon Button" :init-state="initState" icon="lucide:camera">
+    <Variant
+      data-title="Icon Button"
+      :init-state="initState"
+      icon="lucide:camera"
+    >
       <template #default="{ state }">
         <UiIconButton :disabled="state.disabled" :active="state.active">
           <svg width="32" height="32" viewBox="0 0 24 24">
@@ -48,7 +52,7 @@ function initState() {
     </Variant>
 
     <Variant
-      title="Icon and text Button"
+      data-title="Icon and text Button"
       :init-state="initState"
       icon="lucide:camera"
     >
@@ -73,7 +77,7 @@ function initState() {
         </UiIconButton>
       </template>
     </Variant>
-    <Variant title="Home Button">
+    <Variant data-title="Home Button">
       <UiIconButton class="rounded-lg"><IconHome /></UiIconButton>
     </Variant>
   </Story>

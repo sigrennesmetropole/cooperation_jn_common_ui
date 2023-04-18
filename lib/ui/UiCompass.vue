@@ -2,6 +2,7 @@
 import IconCompass from '../icons/IconCompass.vue'
 import { ref, onMounted, watch } from 'vue'
 import { defineProps, defineEmits } from 'vue'
+import '../css/navigation.css'
 
 const props = defineProps({
   vpPitch: Number,
@@ -117,6 +118,7 @@ function onCompassClick() {
   <div
     ref="compass"
     class="orbit h-[75px] w-[75px] border-4 border-white rounded-full flex justify-center items-center absolute bottom-0 shadow-lg"
+    data-title="Navigation 3D"
   >
     <div
       class="h-3 w-3 flex justify-center items-center text-[8px] bg-black text-white absolute bottom-[65px] cursor-pointer rounded"
