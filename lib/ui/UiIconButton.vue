@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { Ref, ref } from 'vue'
+import '../css/navigation.css'
 
 defineProps({
   active: {
@@ -59,29 +60,3 @@ const showTitle: Ref<boolean> = ref(false)
     <slot></slot>
   </button>
 </template>
-
-<style>
-[data-title]:hover:after {
-  opacity: 1;
-  transition: all 0.1s ease 0.5s;
-  visibility: visible;
-}
-[data-title]:after {
-  content: attr(data-title);
-  background-color: rgba(23, 23, 23, 0.8);
-  border-radius: 8px;
-  padding: 8px 24px;
-  font-family: 'DM Sans', sans-serif;
-  color: #e5e5e5;
-  font-size: 14px;
-  line-height: 20px;
-  position: absolute;
-  right: 55px;
-  white-space: nowrap;
-  z-index: 99999;
-  visibility: hidden;
-}
-[data-title] {
-  position: relative;
-}
-</style>
