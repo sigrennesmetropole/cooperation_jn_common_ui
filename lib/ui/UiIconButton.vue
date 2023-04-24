@@ -42,6 +42,7 @@ const showTitle: Ref<boolean> = ref(false)
     class="relative shadow-lg w-12 h-12 bg-white flex items-center justify-center hover:bg-gray-100 focus:ring-2 focus:z-10 focus:ring-slate-400 focus:outline-none"
     :data-title="titleButton"
     :aria-label="ariaLabelButton"
+    @click="showTitle = false"
     @focus="showTitle = true"
     @blur="showTitle = false"
   >
