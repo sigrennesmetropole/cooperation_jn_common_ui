@@ -12,6 +12,8 @@ import IconCompass from './icons/IconCompass.vue'
 import IconHome from './icons/IconHome.vue'
 import IconPlus from './icons/IconPlus.vue'
 import IconMinus from './icons/IconMinus.vue'
+import UiRennesLogo from './ui/UiRennesLogo.vue'
+import UiLinkFooter from './ui/UiLinkFooter.vue'
 
 export {
   FooterArea,
@@ -26,4 +28,6 @@ export {
   IconHome,
   IconPlus,
   IconMinus,
+  UiRennesLogo,
+  UiLinkFooter,
 }
