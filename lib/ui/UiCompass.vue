@@ -118,7 +118,6 @@ function onCompassClick() {
   <div
     ref="compass"
     class="orbit h-[75px] w-[75px] border-4 border-white rounded-full flex justify-center items-center absolute bottom-0 shadow-lg"
-    data-title="Navigation 3D"
   >
     <div
       class="h-3 w-3 flex justify-center items-center text-[8px] bg-black text-white absolute bottom-[65px] cursor-pointer rounded"
@@ -128,6 +127,7 @@ function onCompassClick() {
     </div>
     <div>
       <div
+        data-title="Navigation 3D"
         ref="arrow"
         class="h-[54px] w-[54px] bg-white rounded-[100%] z-10 cursor-pointer flex justify-center items-center text-black text-xs shadow-md"
         @mousedown="onCompassClick"
