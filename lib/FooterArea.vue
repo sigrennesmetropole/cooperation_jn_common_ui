@@ -34,7 +34,9 @@ function goTo(linkToFollow: String) {
     >
       <UiLinkFooter
         v-for="item in props.legalList"
+        tabindex="0"
         :key="item['name']"
+        @keydown.enter="goTo(item['link'])"
         @click="goTo(item['link'])"
         :textColor="props.textColor"
         >{{ item['name'] }}</UiLinkFooter
