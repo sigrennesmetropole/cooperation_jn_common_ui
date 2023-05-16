@@ -1,16 +1,35 @@
 <script setup lang="ts">
-import UiDescribeButton from './UiDescribeButton.vue'
-
-const imgTilt = new URL('../../assets/tilt.svg', import.meta.url).href
-const imgOrient = new URL('../../assets/orient.svg', import.meta.url).href
+import UiDescribeCompass from './UiDescribeCompass.vue'
+import IconCompass from '../icons/IconCompass.vue'
 </script>
 
 <template>
-  <UiDescribeButton name="displayDescribeCompass">
-    <div class="font-dm-sans font-normal text-base">Cliquer et glisser</div>
-    <img :src="imgTilt" class="w-4 h-[50px] cursor-pointer ml-4" />
-    <div class="font-dm-sans text-sm font-normal ml-1">Incliner</div>
-    <img :src="imgOrient" class="w-[50px] h-[50px] cursor-pointer ml-4" />
-    <div class="font-dm-sans text-sm font-normal ml-1 mr-3">Orienter</div>
-  </UiDescribeButton>
+  <UiDescribeCompass name="displayDescribeCompass">
+    <div
+      class="flex flex-col gap-2.5 text-neutral-200 font-dm-sans font-normal text-sm cursor-default"
+    >
+      <div class="flex flex-row items-center">
+        <p>Déplacer l'icone nord</p>
+        <div
+          class="h-3 w-3 flex justify-center items-center mx-2 text-[7px] bg-black text-white border border-white rounded"
+        >
+          N
+        </div>
+        <p>pour orienter la carte</p>
+      </div>
+      <div class="flex flex-row items-center">
+        <p>Cliquer/glisser sur</p>
+        <div
+          ref="arrow"
+          class="h-9 w-9 bg-white rounded-[100%] z-10 flex justify-center items-center shadow-md mx-2"
+        >
+          <IconCompass />
+        </div>
+        <p>pour incliner la carte</p>
+      </div>
+      <div>
+        <p>Ctrl + cliquer/glisser sur la carte pour naviguer</p>
+      </div>
+    </div>
+  </UiDescribeCompass>
 </template>
