@@ -3,5 +3,5 @@ const rennesLogo = new URL('../../assets/rennesLogo.svg', import.meta.url).href
 </script>
 
 <template>
-  <img :src="rennesLogo" />
+  <img :src="rennesLogo" alt="Rennes Métropole" />
 </template>
