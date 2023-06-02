@@ -50,7 +50,7 @@ const stylePositionText = computed(() => {
 <template>
   <div class="absolute z-9" :style="stylePositionButton">
     <button
-      class="bg-white rounded flex items-center justify-center cursor-pointer"
+      class="bg-white rounded-lg flex items-center justify-center cursor-pointer"
       :class="classDimensionButton"
       @click="displayTooltip = !displayTooltip"
       :aria-label="'Contenu tooltip:' + props.text"
