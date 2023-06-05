@@ -21,7 +21,7 @@ import IconCompass from '../icons/IconCompass.vue'
         <p>Cliquer/glisser sur</p>
         <div
           ref="arrow"
-          class="h-9 w-9 bg-white rounded-[100%] z-10 flex justify-center items-center shadow-md mx-2"
+          class="h-9 w-9 bg-white rounded-[100%] z-9 flex justify-center items-center shadow-md mx-2"
         >
           <IconCompass />
         </div>
