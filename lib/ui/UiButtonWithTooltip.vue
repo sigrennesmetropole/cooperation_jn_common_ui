@@ -50,6 +50,8 @@ const stylePositionText = computed(() => {
   const positionRight = 'right: ' + props.positionRight + ';'
   return positionTop + ' ' + positionRight
 })
+
+const style = props.widthBoxText + ' ' + props.zIndex
 </script>
 <template>
   <div class="absolute z-9" :style="stylePositionButton">
@@ -65,7 +67,7 @@ const stylePositionText = computed(() => {
   </div>
   <div
     class="absolute"
-    :class="(props.widthBoxText, props.zIndex)"
+    :class="style"
     :style="stylePositionText"
     v-if="displayTooltip"
   >
