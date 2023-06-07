@@ -12,6 +12,10 @@ const iconTooltipRed = new URL(
 const props = defineProps({
   text: String,
   widthButton: String,
+  zIndex: {
+    type: String,
+    default: 'z-9',
+  },
   heightButton: {
     type: String,
     default: '12',
@@ -60,8 +64,8 @@ const stylePositionText = computed(() => {
     </button>
   </div>
   <div
-    class="absolute z-50"
-    :class="props.widthBoxText"
+    class="absolute"
+    :class="(props.widthBoxText, props.zIndex)"
     :style="stylePositionText"
     v-if="displayTooltip"
   >
