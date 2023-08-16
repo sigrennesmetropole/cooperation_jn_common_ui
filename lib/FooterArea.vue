@@ -25,9 +25,6 @@ function goTo(linkToFollow: String) {
   >
     <div class="flex p-0 gap-6">
       <UiRennesLogo class="w-36 h-7"></UiRennesLogo>
-      <div class="font-normal text-xs">
-        Visualisez les données thématiques du territoire sur la maquette 3D
-      </div>
     </div>
     <div
       class="flex flex-wrap items-end gap-[7px] pt-2 font-dm-sans font-normal text-xs leading-4 text-neutral-500 underline hover:cursor-pointer"
