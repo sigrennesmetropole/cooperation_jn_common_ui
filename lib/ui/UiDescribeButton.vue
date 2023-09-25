@@ -7,14 +7,11 @@ const props = defineProps({
   },
 })
 
-const iconMultiplyBlack = new URL(
-  '../../assets/icon-multiply-black.svg',
+const iconMultiplyWhite = new URL(
+  '../../assets/icon-multiply-white.svg',
   import.meta.url
 ).href
-const imgTriangleCornerRight = new URL(
-  '../../assets/triangle-corner-right.svg',
-  import.meta.url
-).href
+
 const clickClose = ref(false)
 
 const close = () => {
@@ -22,24 +19,23 @@ const close = () => {
   clickClose.value = true
 }
 
-const isDisplayDescribe3D = computed(() => {
+const isDisplayDescribeButton = computed(() => {
   return localStorage.getItem(props.name) !== 'false'
 })
 </script>
 
 <template>
   <div
-    class="flex flex-row bg-white h-[68px] rounded py-6 px-5 justify-center items-center"
-    v-if="isDisplayDescribe3D && !clickClose"
+    class="flex flex-row bg-neutral-800 rounded-lg py-4 px-5 gap-[10px] justify-center items-start"
+    v-if="isDisplayDescribeButton && !clickClose"
   >
     <slot></slot>
     <div class="ml-4">
       <img
-        :src="iconMultiplyBlack"
-        class="w-4 h-4 cursor-pointer ml-auto mr-[20px]"
+        :src="iconMultiplyWhite"
+        class="w-4 h-4 cursor-pointer ml-auto"
         @click="close()"
       />
     </div>
-    <img :src="imgTriangleCornerRight" class="w-4 h-4 -mr-[33px]" />
   </div>
 </template>
