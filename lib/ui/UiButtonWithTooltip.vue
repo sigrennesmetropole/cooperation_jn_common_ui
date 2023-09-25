@@ -14,7 +14,7 @@ const props = defineProps({
   widthButton: String,
   zIndex: {
     type: String,
-    default: 'z-9',
+    default: 'z-10',
   },
   heightButton: {
     type: String,
@@ -54,7 +54,7 @@ const stylePositionText = computed(() => {
 const style = props.widthBoxText + ' ' + props.zIndex
 </script>
 <template>
-  <div class="absolute z-9" :style="stylePositionButton">
+  <div class="absolute z-10" :style="stylePositionButton">
     <button
       class="bg-white rounded-lg flex items-center justify-center cursor-pointer"
       :class="classDimensionButton"
