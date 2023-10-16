@@ -1,7 +1,7 @@
 {
   "name": "@sigrennesmetropole/cooperation_jn_common_ui",
   "private": false,
-  "version": "0.0.32",
+  "version": "0.0.33",
   "repository": "https://github.com/sigrennesmetropole/cooperation_jn_common_ui.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
