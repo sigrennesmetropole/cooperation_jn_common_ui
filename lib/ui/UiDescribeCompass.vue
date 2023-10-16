@@ -21,7 +21,7 @@ const close = () => {
 
 <template>
   <div
-    class="flex flex-row bg-neutral-800 h-[124px] rounded-lg py-4 px-5 gap-[10px] justify-center items-start"
+    class="flex flex-row bg-neutral-800 h-[124px] rounded-lg py-4 px-5 gap-[10px] justify-center items-start opacity-80"
     v-if="!clickClose"
   >
     <slot></slot>
