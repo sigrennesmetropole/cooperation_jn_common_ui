@@ -6,7 +6,7 @@ import IconCompass from '../icons/IconCompass.vue'
 <template>
   <UiDescribeCompass name="displayDescribeCompass">
     <div
-      class="flex flex-col gap-2.5 text-neutral-200 font-dm-sans font-normal text-sm cursor-default opacity-80"
+      class="flex flex-col gap-2.5 text-neutral-200 font-dm-sans font-normal text-sm cursor-default"
     >
       <div class="flex flex-row items-center">
         <p>Déplacer l'icone nord</p>
