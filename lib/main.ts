@@ -16,6 +16,7 @@ import UiRennesLogo from './ui/UiRennesLogo.vue'
 import UiLinkFooter from './ui/UiLinkFooter.vue'
 import IconSynchronize from './icons/IconSynchronize.vue'
 import UiButton from './ui/UiButton.vue'
+import UiToggleButton from './ui/UiToggleButton.vue'
 
 export {
   FooterArea,
@@ -34,4 +35,5 @@ export {
   UiRennesLogo,
   UiLinkFooter,
   IconSynchronize,
+  UiToggleButton,
 }
