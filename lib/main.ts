@@ -17,6 +17,7 @@ import UiLinkFooter from './ui/UiLinkFooter.vue'
 import IconSynchronize from './icons/IconSynchronize.vue'
 import UiButton from './ui/UiButton.vue'
 import UiToggleButton from './ui/UiToggleButton.vue'
+import UiHeaderFullScreen from './ui/UiHeaderFullScreen.vue'
 
 export {
   FooterArea,
@@ -36,4 +37,5 @@ export {
   UiLinkFooter,
   IconSynchronize,
   UiToggleButton,
+  UiHeaderFullScreen,
 }
