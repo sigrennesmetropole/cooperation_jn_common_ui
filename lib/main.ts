@@ -18,6 +18,13 @@ import IconSynchronize from './icons/IconSynchronize.vue'
 import UiButton from './ui/UiButton.vue'
 import UiToggleButton from './ui/UiToggleButton.vue'
 import UiHeaderFullScreen from './ui/UiHeaderFullScreen.vue'
+import UiSiteMap from './ui/UiSiteMap.vue'
+import UiPrivacyLegal from './ui/legal/UiPrivacyLegal.vue'
+import UiLegalNotice from './ui/legal/UiLegalNotice.vue'
+import UiMidLegalNotice from './ui/legal/UiMidLegalNotice.vue'
+import UiCookiesLegal from './ui/legal/UiCookiesLegal.vue'
+import UiAccessibilityLegal from './ui/legal/UiAccessibilityLegal.vue'
+import UiCGULegal from './ui/legal/UiCGULegal.vue'
 
 export {
   FooterArea,
@@ -38,4 +45,11 @@ export {
   IconSynchronize,
   UiToggleButton,
   UiHeaderFullScreen,
+  UiSiteMap,
+  UiPrivacyLegal,
+  UiLegalNotice,
+  UiMidLegalNotice,
+  UiCookiesLegal,
+  UiAccessibilityLegal,
+  UiCGULegal,
 }
