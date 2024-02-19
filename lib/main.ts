@@ -25,6 +25,7 @@ import UiMidLegalNotice from './ui/legal/UiMidLegalNotice.vue'
 import UiCookiesLegal from './ui/legal/UiCookiesLegal.vue'
 import UiAccessibilityLegal from './ui/legal/UiAccessibilityLegal.vue'
 import UiCGULegal from './ui/legal/UiCGULegal.vue'
+import { ConfigType } from './model/config.model'
 
 export {
   FooterArea,
@@ -53,3 +54,4 @@ export {
   UiAccessibilityLegal,
   UiCGULegal,
 }
+export type { ConfigType }
