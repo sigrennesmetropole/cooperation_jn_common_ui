@@ -71,6 +71,9 @@ export type ConfigType = {
       project_planning_base_map_url: string
       project_planning_layer_url: string
     }
+    misc: {
+      cycling_distance: number
+    }
   }
   wave: {
     links: {
